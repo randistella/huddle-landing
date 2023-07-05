@@ -12,6 +12,7 @@ $soft-magenta: hsl(300, 69%, 71%);
 body {
   background-color: $violet;
   background-image: url(/dist/images/bg-desktop.svg);
+  padding: 20px;
 }
 
 nav {
@@ -25,6 +26,8 @@ nav {
 
   .right-box {
     color: #fff;
+    border: #000 thick solid;
+    margin: auto 0;
 
     h1 {
       font-family: "Poppins", sans-serif;

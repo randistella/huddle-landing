@@ -8,6 +8,7 @@
 body {
   background-color: hsl(257, 40%, 49%);
   background-image: url(/dist/images/bg-desktop.svg);
+  padding: 20px;
 }
 
 nav img {
@@ -19,6 +20,8 @@ nav img {
 }
 .flex-wrap .right-box {
   color: #fff;
+  border: #000 thick solid;
+  margin: auto 0;
 }
 .flex-wrap .right-box h1 {
   font-family: "Poppins", sans-serif;
