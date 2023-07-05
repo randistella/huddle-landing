@@ -1,8 +1,70 @@
 $violet: hsl(257, 40%, 49%);
 $soft-magenta: hsl(300, 69%, 71%);
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: 0;
+}
+
+body {
+  background-color: $violet;
+  background-image: url(/dist/images/bg-desktop.svg);
+}
+
+nav {
+  img {
+    width: 150px;
+  }
+}
+
+.flex-wrap {
+  display: flex;
+
+  .right-box {
+    color: #fff;
+
+    h1 {
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+    }
+
+    p {
+      font-family: "Open Sans", sans-serif;
+    }
+
+    button {
+      font-family: "Open Sans", sans-serif;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      border: #fff 1.5px solid;
+      border-radius: 50%;
+      padding: 1px;
+      margin: 5px;
+
+      a {
+        color: white;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        text-decoration: none;
+        height: 12px;
+        width: 12px;
+        padding: 0.5em 0.6em;
+      }
+    }
+  }
 }

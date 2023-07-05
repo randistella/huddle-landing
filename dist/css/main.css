@@ -1,5 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: 0;
+}
+
+body {
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(/dist/images/bg-desktop.svg);
+}
+
+nav img {
+  width: 150px;
+}
+
+.flex-wrap {
+  display: flex;
+}
+.flex-wrap .right-box {
+  color: #fff;
+}
+.flex-wrap .right-box h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.flex-wrap .right-box p {
+  font-family: "Open Sans", sans-serif;
+}
+.flex-wrap .right-box button {
+  font-family: "Open Sans", sans-serif;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  display: inline-block;
+  border: #fff 1.5px solid;
+  border-radius: 50%;
+  padding: 1px;
+  margin: 5px;
+}
+footer ul li a {
+  color: white;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  height: 12px;
+  width: 12px;
+  padding: 0.5em 0.6em;
 }/*# sourceMappingURL=main.css.map */
