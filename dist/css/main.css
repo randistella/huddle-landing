@@ -9,8 +9,13 @@ body {
   background-color: hsl(257, 40%, 49%);
   background-image: url(/dist/images/bg-desktop.svg);
   padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
+nav {
+  margin-bottom: 60px;
+}
 nav img {
   width: 150px;
 }
@@ -18,10 +23,12 @@ nav img {
 .flex-wrap {
   display: flex;
 }
+.flex-wrap .left-box img {
+  width: 500px;
+}
 .flex-wrap .right-box {
   color: #fff;
-  border: #000 thick solid;
-  margin: auto 0;
+  margin: auto 30px;
 }
 .flex-wrap .right-box h1 {
   font-family: "Poppins", sans-serif;
@@ -29,9 +36,23 @@ nav img {
 }
 .flex-wrap .right-box p {
   font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
 }
 .flex-wrap .right-box button {
   font-family: "Open Sans", sans-serif;
+  padding: 10px 40px;
+  filter: drop-shadow(5px 5px 10px #000);
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+.flex-wrap .right-box button:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
+}
+.flex-wrap .right-box h1,
+.flex-wrap .right-box p {
+  margin-bottom: 15px;
 }
 
 footer {
@@ -57,4 +78,11 @@ footer ul li a {
   height: 12px;
   width: 12px;
   padding: 0.5em 0.6em;
+}
+footer ul li i:hover {
+  color: hsl(300, 69%, 71%);
+}
+footer ul a:hover {
+  border-color: hsl(300, 69%, 71%);
+  color: hsl(300, 69%, 71%);
 }/*# sourceMappingURL=main.css.map */

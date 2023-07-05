@@ -13,9 +13,12 @@ body {
   background-color: $violet;
   background-image: url(/dist/images/bg-desktop.svg);
   padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 nav {
+  margin-bottom: 60px;
   img {
     width: 150px;
   }
@@ -24,10 +27,15 @@ nav {
 .flex-wrap {
   display: flex;
 
+  .left-box {
+    img {
+      width: 500px;
+    }
+  }
+
   .right-box {
     color: #fff;
-    border: #000 thick solid;
-    margin: auto 0;
+    margin: auto 30px;
 
     h1 {
       font-family: "Poppins", sans-serif;
@@ -36,10 +44,26 @@ nav {
 
     p {
       font-family: "Open Sans", sans-serif;
+      line-height: 1.6;
     }
 
     button {
       font-family: "Open Sans", sans-serif;
+      padding: 10px 40px;
+      filter: drop-shadow(5px 5px 10px #000);
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: $soft-magenta;
+      color: #fff;
+    }
+
+    h1,
+    p {
+      margin-bottom: 15px;
     }
   }
 }
@@ -68,6 +92,15 @@ footer {
         width: 12px;
         padding: 0.5em 0.6em;
       }
+
+      i:hover {
+        color: $soft-magenta;
+      }
+    }
+
+    a:hover {
+      border-color: $soft-magenta;
+      color: $soft-magenta;
     }
   }
 }
